@@ -1,0 +1,83 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Voice Assistant</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* style.css */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+
+.container {
+    text-align: center;
+    margin: 50px auto;
+    max-width: 400px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    color: #333;
+}
+
+.assistant {
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Voice Assistant</h1>
+        <div class="assistant">
+            <p id="assistant-response">Assistant: Hello! How can I assist you today?</p>
+            <input type="text" id="user-input" placeholder="Say something...">
+            <button id="speak-button">Speak</button>
+        </div>
+    </div>
+    <!-- <script src="script.js"></script> -->
+    <script>
+        // script.js
+const speakButton = document.getElementById('speak-button');
+const userInput = document.getElementById('user-input');
+const assistantResponse = document.getElementById('assistant-response');
+
+const recognition = new (window.SpeechRecognition || window.webkitSpeechRecognition)();
+recognition.continuous = false;
+recognition.lang = 'en-US';
+
+recognition.onresult = (event) => {
+    const result = event.results[0][0].transcript;
+    userInput.value = result;
+    assistantResponse.textContent = `Assistant: You said, "${result}"`;
+};
+
+speakButton.addEventListener('click', () => {
+    recognition.start();
+});
+
+    </script>
+</body>
+</html>

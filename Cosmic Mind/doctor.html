@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/8363347e24.js" crossorigin="anonymous"></script>
+   <link rel="stylesheet" href="footer.css">
+    <style>
+        .header{
+            height: 10vh;
+            /* background-color:rgb(126, 223, 8) ; */
+            margin: 30px 153px;
+        }
+        .headline {
+            display: inline-block;
+            font-size: 41px;
+            position: relative;
+        }
+
+        .headline::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0;
+            height: 3px;
+            background: rgb(126, 223, 8);
+            transition: width 0.3s;
+            /* font-size: 41px; */
+        }
+
+        .headline:hover::after {
+            width: 100%;
+        }
+        .upper{
+            display: flex;
+            margin: 38px 85px;
+        }
+        .card{
+            margin: 0 25px;
+        }
+        .btn{
+            background: rgb(126, 223, 8);
+            color: white;
+        }
+        .btn:hover{
+            background: #007BFF;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1 class="headline"><i class="fa-solid fa-notes-medical" style="padding: 0 10px;"></i>DOCTOR</h1>
+    </div>
+    <div class="upper">
+        <div class="card" style="width: 287px;">
+            <img src="/image/team-image2.jpg" class="card-img-top" alt="..." style="height: 169px;">
+            <div class="card-body">
+              <h5 class="card-title"><i class="fa-solid fa-user-nurse" style="padding: 0 5px;"></i>Carl Jung</h5>
+              <p class="card-text">A Swiss psychiatrist and psychoanalyst who founded analytical psychology, which explores the role of the collective unconscious and archetypes in human psychology.</p>
+              <a href="/appo.html" class="btn"><i class="fa-solid fa-calendar-check" style="padding: 0 5px;"></i>Appointment</a>
+            </div>
+          </div>
+          <div class="card" style="width: 287px;">
+            <img src="/image/news-image.jpg" class="card-img-top" alt="..." style="height: 169px;">
+            <div class="card-body">
+              <h5 class="card-title"><i class="fa-solid fa-user-nurse" style="padding: 0 5px;"></i>Aaron T. Beck</h5>
+              <p class="card-text">The founder of cognitive therapy (Cognitive Behavioral Therapy or CBT), a widely used approach to treating various mental health disorders.</p>
+              <a href="/appo.html" class="btn"><i class="fa-solid fa-calendar-check" style="padding: 0 5px;"></i>Appointment</a>
+            </div>
+          </div>
+          <div class="card" style="width: 287px;">
+            <img src="/image/news-image3.jpg" class="card-img-top" alt="..." style="height: 169px;">
+            <div class="card-body">
+              <h5 class="card-title"><i class="fa-solid fa-user-nurse" style="padding: 0 5px;"></i>Viktor Frankl </h5>
+              <p class="card-text"> An Austrian neurologist and psychiatrist, Frankl is known for his development of logotherapy, a psychotherapy based on finding meaning in life.</p>
+              <a href="/appo.html" class="btn"><i class="fa-solid fa-calendar-check" style="padding: 0 5px;"></i>Appointment</a>
+            </div>
+          </div>
+          <div class="card" style="width: 287px;">
+            <img src="/image/news-image.jpg" class="card-img-top" alt="..." style="height: 169px;">
+            <div class="card-body">
+              <h5 class="card-title"><i class="fa-solid fa-user-nurse" style="padding: 0 5px;"></i>Elisabeth Kübler-Ross</h5>
+              <p class="card-text"> A psychiatrist known for her work on the stages of grief and death and dying, which has greatly influenced the field of psychiatry and counseling.</p>
+              <a href="#" class="btn"><i class="fa-solid fa-calendar-check" style="padding: 0 5px;"></i>Appointment</a>
+            </div>
+          </div>
+    </div>
+    <div class="upper">
+        <div class="card" style="width: 287px;">
+            <img src="/image/news-image1.jpg" class="card-img-top" alt="..." style="height: 169px;">
+            <div class="card-body">
+              <h5 class="card-title"><i class="fa-solid fa-user-nurse" style="padding: 0 5px;"></i>Rollo May</h5>
+              <p class="card-text">An existential psychologist and author who made significant contributions to existential psychology and existential therapy.</p>
+              <a href="#" class="btn"><i class="fa-solid fa-calendar-check" style="padding: 0 5px;"></i>Appointment</a>
+            </div>
+          </div>
+          <div class="card" style="width: 287px;">
+            <img src="/image/news-image3.jpg" class="card-img-top" alt="..." style="height: 169px;">
+            <div class="card-body">
+              <h5 class="card-title"><i class="fa-solid fa-user-nurse" style="padding: 0 5px;"></i>Sigmund Freud</h5>
+              <p class="card-text">Often referred to as the father of psychoanalysis, Freud's work laid the foundation for modern psychotherapy and the understanding of the unconscious mind.</p>
+              <a href="#" class="btn"><i class="fa-solid fa-calendar-check" style="padding: 0 5px;"></i>Appointment</a>
+            </div>
+          </div>
+          <div class="card" style="width: 287px;">
+            <img src="/image/team-image2.jpg" class="card-img-top" alt="..." style="height: 169px;">
+            <div class="card-body">
+              <h5 class="card-title"><i class="fa-solid fa-user-nurse" style="padding: 0 5px;"></i>Virginia Satir</h5>
+              <p class="card-text"> A family therapist and author known for her work in the field of family systems therapy and her pioneering work in family therapy.</p>
+              <a href="#" class="btn"><i class="fa-solid fa-calendar-check" style="padding: 0 5px;"></i>Appointment</a>
+            </div>
+          </div>
+          <div class="card" style="width: 287px;">
+            <img src="/image/news-image.jpg" class="card-img-top" alt="..." style="height: 169px;">
+            <div class="card-body">
+              <h5 class="card-title"><i class="fa-solid fa-user-nurse" style="padding: 0 5px;"></i>Erich Fromm </h5>
+              <p class="card-text"> A German-American psychoanalyst and social psychologist known for his contributions to humanistic psychology and his exploration of the nature of love</p>
+              <a href="#" class="btn"><i class="fa-solid fa-calendar-check" style="padding: 0 5px;"></i>Appointment</a>
+            </div>
+          </div>
+    </div>
+    <footer>
+        <div class="footer-content">
+            <div class="social-icons">
+                <a href="#" target="_blank"><i class="fab fa-facebook"></i></a>
+                <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fa-solid fa-newspaper"></i></a>
+                <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+                <!-- Add more social media icons and links as needed -->
+            </div>
+            <p>&copy; 2023 Cosmic Mind</p>
+        </div>
+    </footer>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>

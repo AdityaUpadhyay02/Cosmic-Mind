@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="home.css">
+    
+    <title>Appointment</title>
+</head>
+<body>
+    <div class="container2">
+        <div class="doctor-section">
+            <img src="/image/appointment-image.jpg" alt="Doctor's Image">
+        </div>
+        <div class="appointment-section">
+            <h1>Make an Appointment</h1>
+            <form id="appointment-form">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone:</label>
+                    <input type="tel" id="phone" name="phone" required>
+                </div>
+                <div class="form-group">
+                    <label for="department">Select Department:</label>
+                    <select id="department" name="department" required>
+                        <option value="general">General</option>
+                        <option value="dentistry">Dentistry</option>
+                        <option value="orthopedics">Orthopedics</option>
+                        <option value="cardiology">Cardiology</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="date">Preferred Date:</label>
+                    <input type="date" id="date" name="date" required>
+                </div>
+                <div class="form-group">
+                    <label for="time">Preferred Time:</label>
+                    <input type="time" id="time" name="time" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Additional Information:</label>
+                    <textarea id="message" name="message" rows="4"></textarea>
+                </div>
+                <button class="butt" onclick="setTimeout(timeout)">Submit Appointment</button>
+            </form>
+        </div>
+    </div>
+    <script src="javascript.js"></script>
+</body>
+</html>

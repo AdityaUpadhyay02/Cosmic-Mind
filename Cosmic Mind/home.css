@@ -1,0 +1,271 @@
+/* Reset some default styles */
+body, ul {
+    margin: 0;
+    padding: 0;
+}
+
+/* Style the navbar */
+.navbar {
+    background:white;
+    color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 27px 83px;
+    position: fixed;
+    overflow: hidden;
+}
+
+/* Style the logo */
+.logo {
+    font-size: 32px;
+    font-weight: bold;
+    color:rgb(126, 223, 8);
+}
+
+/* Style the navigation list */
+.nav-list {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    font-size: 21px;
+}
+
+.nav-list li {
+    margin-right: 30px;
+}
+
+.nav-list a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.nav-list a:hover {
+    color: rgb(126, 223, 8);
+}
+/* rgb(126, 223, 8) */
+/* Style the button */
+
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: rgb(126, 223, 8); /* Blue color for the button */
+    color: #fff; /* Text color for the button */
+    text-decoration: none; /* Remove underline from the link */
+    border: none; /* Remove button border */
+    border-radius: 5px; /* Rounded corners */
+    transition: transform 0.3s; /* Add a transition for the transform property */
+}
+
+/* Hover effect */
+.button:hover {
+    transform: translateY(-3px) scale(1.05); /* Apply a 3D effect on hover */
+}
+
+/* //container */
+
+body {
+    font-family: Arial, sans-serif;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: black;
+}
+
+.button2-3d {
+    background-color:rgb(126, 223, 8);
+    color: white;
+    font-size: 16px;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    position: relative;
+    overflow: hidden;
+    transform-style: preserve-3d;
+    perspective: 1000px;
+}
+
+.button:hover {
+    background-color: #0056b3;
+}
+
+.button::before {
+    content: "";
+    background-color: rgba(0, 0, 0, 0.3);
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 0;
+    transition: all 0.3s ease-in-out;
+}
+
+.button:hover::before {
+    top: 0;
+    height: 100%;
+}
+
+/* container end */
+
+/* logo */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+}
+
+.interactive-heading {
+    font-size: 36px;
+    color: rgb(126, 223, 8);
+    transition: color 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.interactive-heading:hover {
+    color: #007BFF;
+}
+/* end logo */
+/* appointmnet */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.container2 {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.doctor-section {
+    flex: 1;
+    padding: 20px;
+    text-align: center;
+}
+
+.doctor-section img {
+    max-width: 100%;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.appointment-section {
+    flex: 1;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+select,
+input[type="date"],
+input[type="time"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.butt{
+    display: block;
+    margin: 0 auto;
+    padding: 10px 20px;
+    background-color: rgb(126, 223, 8);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.butt:hover {
+    background-color: #007bff;
+}
+/* appointmnet end */
+
+/* doctor  */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    background-color: rgb(126, 223, 8);
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.container3{
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 20px;
+}
+
+.doctor {
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    margin: 20px;
+    padding: 20px;
+    text-align: center;
+    max-width: 300px;
+}
+
+img {
+    max-width: 100%;
+    border-radius: 50%;
+}
+
+h2 {
+    margin-top: 10px;
+    font-size: 1.5rem;
+}
+
+p {
+    font-size: 1.1rem;
+    color: #555;
+}
+.but{
+    margin: 3px 665px;
+}

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="styles.css"> -->
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+.search-container {
+    margin-bottom: 20px;
+}
+
+#doctorDetails {
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+container {
+      max-width: 800px;
+      margin: 50px auto;
+      text-align: center;
+    }
+
+    #search-icon {
+      cursor: pointer;
+    }
+
+    #search-bar {
+      display: none;
+      width: 200px;
+      padding: 8px;
+      margin-top: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    </style>
+    <title>Doctor Search</title>
+</head>
+<body>
+
+    <div class="container">
+        <div id="search-icon">
+          <!-- You can replace this with your own icon -->
+          🌐
+        </div>
+        <input type="text" id="search-input" placeholder="Search...">
+        <button id="search-btn" onclick="performSearch()">Search</button>
+      </div>
+
+    <div id="doctorDetails">
+        <!-- Doctor details will be displayed here -->
+    </div>
+
+    <script>
+        // Sample array of doctors
+const doctors = [
+    { name: 'Dr. John Doe', specialization: 'Cardiologist', contact: '123-456-7890' },
+    { name: 'Dr. Jane Smith', specialization: 'Pediatrician', contact: '987-654-3210' },
+    // Add more doctors as needed
+];
+
+function searchDoctor() {
+    // Get the search input value
+    const searchInput = document.getElementById('searchInput').value.toLowerCase();
+
+    // Find the doctor in the array
+    const foundDoctor = doctors.find(doctor => doctor.name.toLowerCase().includes(searchInput));
+
+    // Display the doctor details or a message if not found
+    const doctorDetailsContainer = document.getElementById('doctorDetails');
+    if (foundDoctor) {
+        doctorDetailsContainer.innerHTML = `
+            <h2>${foundDoctor.name}</h2>
+            <p><strong>Specialization:</strong> ${foundDoctor.specialization}</p>
+            <p><strong>Contact:</strong> ${foundDoctor.contact}</p>
+        `;
+    } else {
+        doctorDetailsContainer.innerHTML = '<p>No matching doctor found.</p>';
+    }
+}
+document.addEventListener('DOMContentLoaded', function () {
+      var searchIcon = document.getElementById('search-icon');
+      var searchBar = document.getElementById('search-bar');
+
+      searchIcon.addEventListener('click', function () {
+        if (searchBar.style.display === 'none' || searchBar.style.display === '') {
+          searchBar.style.display = 'block';
+        } else {
+          searchBar.style.display = 'none';
+        }
+      });
+    });
+
+    </script>
+</body>
+</html>

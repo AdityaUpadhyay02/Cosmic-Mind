@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mental Health Screening Test</title>
+    <link rel="stylesheet" href="screening.css">
+</head>
+<body>
+    <header>
+        <h1>Mental Health Screening Test</h1>
+    </header>
+    <main>
+        <form id="mentalHealthTestForm">
+            <fieldset>
+                <legend>Question 1:</legend>
+                <label for="q1">How often have you felt anxious or worried in the past two weeks?</label>
+                <input type="radio" name="q1" value="0">Not at all<br>
+                <input type="radio" name="q1" value="1">Occasionally<br>
+                <input type="radio" name="q1" value="2">Frequently<br>
+                <input type="radio" name="q1" value="3">Almost all the time<br>
+            </fieldset>
+
+            <fieldset>
+                <legend>Question 2:</legend>
+                <label for="q2">Have you experienced a loss or major life change recently?</label>
+                <input type="radio" name="q2" value="0">No<br>
+                <input type="radio" name="q2" value="1">Yes<br>
+            </fieldset> 
+            
+            <fieldset>
+                <legend>Question 3:</legend>
+                <label for="q1">Over the last two weeks, how often have you felt little interest or pleasure in doing things you usually enjoy?</label>
+                <input type="radio" name="q1" value="0">Not at all<br>
+                <input type="radio" name="q1" value="1">Occasionally<br>
+                <input type="radio" name="q1" value="2">Frequently<br>
+                <input type="radio" name="q1" value="3">Almost all the time<br>
+            </fieldset>
+
+            <fieldset>
+                <legend>Question 4:</legend>
+                <label for="q2">Have you experienced a significant change in your appetite or weight recently?</label>
+                <input type="radio" name="q2" value="0">No<br>
+                <input type="radio" name="q2" value="1">Yes<br>
+            </fieldset>
+             
+            <fieldset>
+                <legend>Question 5:</legend>
+                <label for="q1">How often have you felt down, depressed, or hopeless in the last two weeks?How often have you felt down, depressed, or hopeless in the last two weeks?</label>
+                <input type="radio" name="q1" value="0">Not at all<br>
+                <input type="radio" name="q1" value="1">Occasionally<br>
+                <input type="radio" name="q1" value="2">Frequently<br>
+                <input type="radio" name="q1" value="3">Almost all the time<br>
+            </fieldset>
+
+            <fieldset>
+                <legend>Question 6:</legend>
+                <label for="q2">Do you have trouble relaxing or feeling restless most of the time?</label>
+                <input type="radio" name="q2" value="0">No<br>
+                <input type="radio" name="q2" value="1">Yes<br>
+            </fieldset>
+
+            <fieldset>
+                <legend>Question 7:</legend>
+                <label for="q1">In the past two weeks, how often have you felt nervous, anxious, or on edge?</label>
+                <input type="radio" name="q1" value="0">Not at all<br>
+                <input type="radio" name="q1" value="1">Occasionally<br>
+                <input type="radio" name="q1" value="2">Frequently<br>
+                <input type="radio" name="q1" value="3">Almost all the time<br>
+            </fieldset>
+
+            <fieldset>
+                <legend>Question 8:</legend>
+                <label for="q2">Have you experienced sudden panic attacks or intense fear recently?</label>
+                <input type="radio" name="q2" value="0">No<br>
+                <input type="radio" name="q2" value="1">Yes<br>
+            </fieldset>
+
+            <fieldset>
+                <legend>Question 9:</legend>
+                <label for="q1">How often have you felt overwhelmed by stress in the past month?</label>
+                <input type="radio" name="q1" value="0">Not at all<br>
+                <input type="radio" name="q1" value="1">Occasionally<br>
+                <input type="radio" name="q1" value="2">Frequently<br>
+                <input type="radio" name="q1" value="3">Almost all the time<br>
+            </fieldset>
+
+            <fieldset>
+                <legend>Question 10:</legend>
+                <label for="q2">Have you had difficulty sleeping or experienced changes in your sleep pattern due to stress?</label>
+                <input type="radio" name="q2" value="0">No<br>
+                <input type="radio" name="q2" value="1">Yes<br>
+            </fieldset>
+
+            <fieldset>
+                <legend>Question 11:</legend>
+                <label for="q2">Do you often feel fatigued or physically tense because of stress?</label>
+                <input type="radio" name="q2" value="0">No<br>
+                <input type="radio" name="q2" value="1">Yes<br>
+            </fieldset>
+
+            
+
+            <fieldset>
+                <legend>Question 12:</legend>
+                <label for="q2">Have you experienced a traumatic event in the past, such as a serious accident or personal assault?</label>
+                <input type="radio" name="q2" value="0">No<br>
+                <input type="radio" name="q2" value="1">Yes<br>
+            </fieldset>
+
+            <fieldset>
+                <legend>Question 13:</legend>
+                <label for="q2">Do you frequently have nightmares or intrusive memories related to the traumatic event?</label>
+                <input type="radio" name="q2" value="0">No<br>
+                <input type="radio" name="q2" value="1">Yes<br>
+            </fieldset>
+
+            <fieldset>
+                <legend>Question 14:</legend>
+                <label for="q2">Have you been avoiding situations or places that remind you of the traumatic event?</label>
+                <input type="radio" name="q2" value="0">No<br>
+                <input type="radio" name="q2" value="1">Yes<br>
+            </fieldset>
+
+            <fieldset>
+                <legend>Question 15:</legend>
+                <label for="q2">Do you consume alcohol or drugs in larger amounts or for longer periods than you intended?</label>
+                <input type="radio" name="q2" value="0">No<br>
+                <input type="radio" name="q2" value="1">Yes<br>
+            </fieldset>
+
+           
+
+           
+            <button type="button" id="calculateButton">Calculate Results</button>
+
+        </form>
+
+        <div id="results">
+            <h2>Your Results:</h2>
+            <p id="resultMessage"></p>
+        </div>
+      <div class="btn1">
+        <a href="tsk.html" class="custom-button">Perform Task</a>
+      </div>
+       
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

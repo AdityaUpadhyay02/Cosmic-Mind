@@ -1,0 +1,66 @@
+/* style.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+fieldset {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+}
+
+input[type="radio"] {
+    margin-right: 10px;
+}
+
+#results {
+    display: none;
+    margin-top: 20px;
+}
+
+#resultMessage {
+    font-weight: bold;
+}
+button{
+    padding: 13px 19px;
+    margin: 7px 300px;
+    background: rgb(45,45,45);
+    color: white;
+    border: 1px solid black;
+    border-radius: 8px;
+    cursor: pointer;
+}
+button:hover{
+    background-color: black;
+}
+.custom-button{
+    background: rgb(45,45,45);
+    color: white;
+    text-decoration: none;
+    font-size: 17px;
+    padding: 11px 17px;
+    border: 1px solid black;
+    border-radius: 8px;
+    margin: 0 308px;
+}
+.btn1{
+    padding: 18px 0px;
+}
